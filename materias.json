@@ -1,0 +1,33 @@
+{
+  "Materia": [
+    {
+      "prof": "Juanito Perez",
+      "name": "Sistemas Operativos",
+      "id": "1",
+      "clases": [
+        {
+          "Dia": "Lun",
+          "inicio": {
+            "hora": "H12",
+            "minuto": "M2"
+          },
+          "ending": {
+            "hora": "M14",
+            "minuto": "M1"
+          }
+        },
+        {
+          "Dia": "Vie",
+          "inicio": {
+            "hora": "H12",
+            "minuto": "M2"
+          },
+          "ending": {
+            "hora": "H14",
+            "minuto": "M1"
+          }
+        }
+      ]
+    }
+  ]
+}
