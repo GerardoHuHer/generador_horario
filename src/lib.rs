@@ -75,16 +75,12 @@ pub mod diseno {
         clases: Vec<Clase>,
     }
 }
-
-pub mod functions {
+pub mod funciones {
     use super::diseno::{Clase, Dia, Materia, H, M};
     use std::error::Error;
     use std::fs::File;
     use std::io::BufReader;
     fn read_json(path: &str) -> Result<Vec<Materia>, Box<dyn Error>> {
         let file = File::open(path);
-        let reader = BufReader::new(file);
-        let materias: Vec<Materia> = serde_json::from_reader(reader)?;
-        Ok(materias)
     }
 }
