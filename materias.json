@@ -1,23 +1,52 @@
 {
-  "Materia": [
+  "lista": [
     {
       "prof": "Juanito Perez",
       "name": "Sistemas Operativos",
       "id": "1",
       "clases": [
         {
-          "Dia": "Lun",
+          "dia": "Lun",
           "inicio": {
             "hora": "H12",
             "minuto": "M2"
           },
           "ending": {
-            "hora": "M14",
+            "hora": "H14",
             "minuto": "M1"
           }
         },
         {
-          "Dia": "Vie",
+          "dia": "Vie",
+          "inicio": {
+            "hora": "H12",
+            "minuto": "M2"
+          },
+          "ending": {
+            "hora": "H14",
+            "minuto": "M1"
+          }
+        }
+      ]
+    },
+    {
+      "prof": "Pancracio",
+      "name": "Sistemas Operativos",
+      "id": "2",
+      "clases": [
+        {
+          "dia": "Lun",
+          "inicio": {
+            "hora": "H12",
+            "minuto": "M2"
+          },
+          "ending": {
+            "hora": "H14",
+            "minuto": "M1"
+          }
+        },
+        {
+          "dia": "Vie",
           "inicio": {
             "hora": "H12",
             "minuto": "M2"

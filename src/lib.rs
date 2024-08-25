@@ -74,13 +74,30 @@ pub mod diseno {
         id: String,
         clases: Vec<Clase>,
     }
+
+    #[derive(Deserialize, Debug)]
+    pub struct Materias {
+        pub lista: Vec<Materia>,
+    }
 }
 pub mod funciones {
-    use super::diseno::{Clase, Dia, Materia, H, M};
-    use std::error::Error;
-    use std::fs::File;
-    use std::io::BufReader;
-    fn read_json(path: &str) -> Result<Vec<Materia>, Box<dyn Error>> {
-        let file = File::open(path);
+    use serde_json::from_str;
+    use std::fs;
+
+    use crate::diseno::{Materia, Materias};
+
+    pub fn read_json(path: &str) -> Result<Vec<Materia>, Box<dyn std::error::Error>> {
+        let data = fs::read_to_string(path)?;
+        let materias: Materias = from_str(&data)?;
+        let materias_vec: Vec<Materia> = materias.lista;
+        for materia in &materias_vec {
+            println!("{:?}", materia);
+        }
+
+        Ok(materias_vec)
+    }
+
+    pub fn combinaciones(arr: Vec<Materia>) {
+        let resultado: i32 = 5;
     }
 }
